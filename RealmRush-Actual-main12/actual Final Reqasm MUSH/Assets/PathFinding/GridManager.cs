@@ -5,7 +5,6 @@ using UnityEngine;
 public class GridManager : MonoBehaviour
 {
 	[SerializeField] Node node;
-	[SeralizedField] Test test;
 
 	private void Start()
 	{
