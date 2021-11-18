@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using TMPro; //This is an premade intergrated asset which will be used in order to add text to the objects
 
-[ExecuteAlways]
-[RequireComponent(typeof(TextMeshPro))]
-public class CoordinateLabler : MonoBehaviour
+[ExecuteAlways] //This file will always execute even when the game is not being played
+[RequireComponent(typeof(TextMeshPro))] //takes text mesh pro which allows me to format text in an easy way
+public class CoordinateLabler : MonoBehaviour //Declaring class for the coordinate labler
 {
-
-	[SerializeField] Color defaultColor = Color.white;
-	[SerializeField] Color blockedColor = Color.gray;
+//A serilized field is used to so I can edit values inside the engine without changing
+	[SerializeField] Color defaultColor = Color.white;//Varaible for colour of text
+	[SerializeField] Color blockedColor = Color.gray;//Variable for colour of text when is placed is true
 
     TextMeshPro label;
 	Vector2Int coordinates = new Vector2Int();
